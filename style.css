@@ -13,22 +13,52 @@ body {
     text-align: center;
 }
 h1 {
-    font-size: 6rem;
-    font-family: 'Raleway:800', sans-serif;
+    font-size: 5rem;
+    font-family: 'Rubik Mono One', sans-serif;
     max-width: 75vw;
-    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background: -webkit-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    display: flex;
+    flex-direction: row;
 }
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 p{
     font-size: 1.2rem;
     color: #444;
 }
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border: 3px solid #8489cc;
+    box-shadow: 7px 9px 0px #8489cc;
+    width: 70vw;
+    margin: auto;
+}
+
+#searchQuery{
+    width: 49vw;
+    height: 10vh;
+    font-size: 1.6rem;
+    border: none;
+    border-bottom: 3px solid #333;
+    background: none;
+    text-align: center;
+    color: black;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    /* width: 70vw; */
+    /* background: white; */
+    border: 3;
+}
 .button {
-    background-color: #1DB954;
+    background-color: #8489cc;
     border: none;
     border-radius: 0.3rem;
     color: white;
