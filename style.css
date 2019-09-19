@@ -82,5 +82,9 @@ form {
  }
 
  .gif {
-     width=200px;
+     width: 200px;
+ }
+
+ .error { 
+    color: #b4130d !important;
  }
