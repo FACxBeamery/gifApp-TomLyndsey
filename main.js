@@ -6,9 +6,9 @@ document.getElementById("submitrequest").addEventListener("click",(event => {
   const query = document.getElementById("searchQuery").value;
   sendRequest(query); // pass as param here
 }));
- 
+
 function sendRequest(query) {
-  
+
     var xhr = new XMLHttpRequest();
 
     xhr.addEventListener("readystatechange", function () {
@@ -30,8 +30,8 @@ function sendRequest(query) {
         response.data
       }
     });
-    
-    
+
+
     console.log(query);
     xhr.open("GET", `https://cors-anywhere.herokuapp.com/http://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${query}&limit=10&rating=g`, true);
     xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
@@ -39,4 +39,3 @@ function sendRequest(query) {
 
 
 }
-
