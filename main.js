@@ -2,9 +2,9 @@ document.getElementById("submitrequest").addEventListener("click",(event => {
   const query = document.getElementById("searchQuery").value;
   sendRequest(query);
 }));
- 
+
 function sendRequest(query) {
-  
+
     var xhr = new XMLHttpRequest();
 
     xhr.addEventListener("readystatechange", function () {
@@ -24,8 +24,10 @@ function sendRequest(query) {
         }
       }
     });
+
     
 url = `https://cors-anywhere.herokuapp.com/http://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${query}&limit=10&rating=g`;
+
 
 
 xhr.open("GET", url, true);
@@ -33,7 +35,6 @@ xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
 xhr.send();
 
 }
-
 
 function removeChildNodes(id) {
   node = document.getElementById(id)
@@ -50,3 +51,4 @@ function errorMessage() {
   textNode = document.createTextNode('Uh oh! We couldn\'t find any matches for that search. Please try again!');
   elem.appendChild(textNode);
 }
+

@@ -3,12 +3,13 @@
 img{
     width: 25vw;
     padding: 2vw;
-    
+    height: 25vw;
+
 
 }
 body {
     font-family: 'Raleway', sans-serif;
-    
+
     background-color: #f8f8f8;
     text-align: center;
 }
@@ -24,7 +25,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 p{
     font-size: 1.2rem;
@@ -72,19 +73,25 @@ form {
    }
 
  .button:hover{
-    
+
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
     transition: 0.5s;
- }  
+ }
  a {
      color: #1DB954;
      text-decoration: none;
  }
 
- .gif {
-     width: 200px;
- }
 
  .error { 
     color: #b4130d !important;
  }
+
+@media (max-width:600px) {
+img{  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  padding: 2vw;
+  height: 40vw;
+}
+}
