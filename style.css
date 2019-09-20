@@ -82,8 +82,9 @@ form {
      text-decoration: none;
  }
 
- .gif {
-     width=200px;
+
+ .error { 
+    color: #b4130d !important;
  }
 
 @media (max-width:600px) {
