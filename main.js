@@ -17,10 +17,7 @@ function sendRequest(query) {
         }
         for (i=0;i<response.data.length;i++){
             gifURL = response.data[i].images.original.url;
-            img = document.createElement("img");
-            img.src = gifURL;
-            gif = document.getElementById("gifs")
-            gif.appendChild(img)
+            addGIF(gifURL);
         }
       }
     });
@@ -29,11 +26,17 @@ function sendRequest(query) {
 url = `https://cors-anywhere.herokuapp.com/http://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${query}&limit=10&rating=g`;
 
 
-
 xhr.open("GET", url, true);
-xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest'); // avoids CORS error
 xhr.send();
 
+}
+
+function addGIF(url) {
+  img = document.createElement("img");
+  img.src = url;
+  gif = document.getElementById("gifs");
+  gif.appendChild(img);
 }
 
 function removeChildNodes(id) {
