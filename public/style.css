@@ -1,0 +1,115 @@
+
+
+img{
+    width: 25vw;
+    padding: 2vw;
+    height: 25vw;
+
+
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+h1 {
+    font-size: 5rem;
+    font-family: 'Rubik Mono One', sans-serif;
+    max-width: 75vw;
+    background: -webkit-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+p{
+    font-size: 1.2rem;
+    color: #444;
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border: 3px solid #8489cc;
+    box-shadow: 7px 9px 0px #8489cc;
+    width: 70vw;
+    margin: auto;
+}
+
+#searchQuery{
+    width: 49vw;
+    height: 10vh;
+    font-size: 1.6rem;
+    border: none;
+    border-bottom: 3px solid #333;
+    background: none;
+    text-align: center;
+    color: black;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    /* width: 70vw; */
+    /* background: white; */
+    border: 3;
+}
+.button {
+    background-color: #8489cc;
+    border: none;
+    border-radius: 0.3rem;
+    color: white;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    margin: 2rem 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 20vw;
+    font-family: 'Raleway', sans-serif;
+   }
+
+ .button:hover{
+
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    transition: 0.5s;
+ }
+ a {
+     color: rgb(1, 32, 12);
+     text-decoration: none;
+ }
+
+
+ .error { 
+    color: #b4130d !important;
+ }
+
+@media (max-width:600px) {
+ #gifs {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img {
+    width: 70vw;
+    padding: 2vw;
+    height: 40vw;
+}
+
+h1 {
+  font-size: 15vw;  
+  
+}
+
+form {
+    font-size: 1rem;
+    width: 70vw;
+    height 70vw;
+}
+
+#searchQuery {
+    font-size: 1rem;
+}
+}
+
