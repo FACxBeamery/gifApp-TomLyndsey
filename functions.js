@@ -1,8 +1,3 @@
-document.getElementById ('submitrequest').addEventListener ('click', event => {
-  const query = document.getElementById ('searchQuery').value;
-  sendRequest (query);
-});
-
 function sendRequest (query) {
   var xhr = new XMLHttpRequest ();
 
@@ -67,7 +62,3 @@ function removeError () {
     elem.removeChild (elem.firstChild);
   }
 }
-
-module.exports = {
-  sendRequest,
-};
